@@ -1,0 +1,43 @@
+#include "Utils/Log/Log.h"
+#include "Utils/CommonOpr/Lock.h"
+#include "GatewayBG/Socket/GateWayMgr.h"
+
+int main(int argc, char* argv[])
+{
+        if (argc != 2) {
+                printf("argv[0]=./main\n");
+                printf("argv[1]=端口号\n");
+                return 0;
+        }
+
+        if (0 == strcmp(argv[1], "-v")) {
+                printf("808\n"); 
+                return 0;
+        }
+
+        Lock lockFile;
+        //daemon(1, 0);
+
+        if (lockFile.LockFile("/var/run/gwengine_client.pid") == LOCK_FAIL) {
+                LOG_INFO("GWEngine AlreadyRunning!");
+                printf("GWEngine AlreadyRunning!\n");
+                exit(1);
+        }
+
+        FILE* file = fopen("/var/run/NodeClient.pid", "w+");
+        if (file == NULL) {
+                return 1;
+        }
+        fprintf(file, "%d", getpid());
+        fclose(file);
+
+        int port = atoi(argv[1]);
+        GateWayMgr gate(port);
+        int ret = gate.Init();
+        if ( ret != 0 ) {
+                LOG_INFO("gate.Init error! ret=" << ret);
+                return ret;
+        }
+        LOG_INFO("Listen beginning...");
+        gate.Listen();
+}

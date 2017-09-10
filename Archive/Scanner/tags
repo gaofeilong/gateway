@@ -1,0 +1,233 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+BOOSTPTR	DirFilter.h	15;"	d
+BOOSTPTR	FilterFactory.cpp	19;"	d	file:
+BOOSTPTR	FilterFactory.h	18;"	d
+BOOSTPTR	PostfixFilter.h	16;"	d
+BOOSTPTR	PrefixFilter.h	15;"	d
+BOOSTPTR	Scanner.h	9;"	d
+BOOSTPTR	SizeFilter.h	16;"	d
+BUFFER_SIZE	Scanner.cpp	15;"	d	file:
+CreateFilter	FilterFactory.cpp	/^BOOSTPTR<FileFilter> FilterFactory::CreateFilter(const struct _FilterArg &arg)$/;"	f	class:FilterFactory	signature:(const struct _FilterArg &arg)
+CreateFilter	FilterFactory.h	/^        BOOSTPTR<FileFilter> CreateFilter(const struct _FilterArg &arg);$/;"	p	class:FilterFactory	access:public	signature:(const struct _FilterArg &arg)
+DEMOND_TYPE	Scanner.cpp	17;"	d	file:
+DirFilter	DirFilter.cpp	/^DirFilter::DirFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:DirFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg)
+DirFilter	DirFilter.h	/^        DirFilter(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg);$/;"	p	class:DirFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg)
+DirFilter	DirFilter.h	/^class DirFilter : public FileFilter {$/;"	c	inherits:FileFilter
+DirFilter::DirFilter	DirFilter.cpp	/^DirFilter::DirFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:DirFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg)
+DirFilter::DirFilter	DirFilter.h	/^        DirFilter(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg);$/;"	p	class:DirFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _DirFilterArg &arg)
+DirFilter::Filter	DirFilter.cpp	/^bool DirFilter::Filter(const string &path)$/;"	f	class:DirFilter	signature:(const string &path)
+DirFilter::Filter	DirFilter.h	/^        bool Filter(const string &path);$/;"	p	class:DirFilter	access:private	signature:(const string &path)
+DirFilter::m_DirArg	DirFilter.h	/^        struct _DirFilterArg m_DirArg;$/;"	m	class:DirFilter	typeref:struct:DirFilter::_DirFilterArg	access:private
+DirFilter::m_FilterPtr	DirFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:DirFilter	access:private
+DirFilter::~DirFilter	DirFilter.cpp	/^DirFilter::~DirFilter()$/;"	f	class:DirFilter	signature:()
+DirFilter::~DirFilter	DirFilter.h	/^        ~DirFilter();$/;"	p	class:DirFilter	access:public	signature:()
+DoGetArvFile	Scanner.cpp	/^int Scanner::DoGetArvFile(const string& path)$/;"	f	class:Scanner	signature:(const string& path)
+DoGetArvFile	Scanner.h	/^        int  DoGetArvFile(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+FILTER_TYPE	Scanner.cpp	16;"	d	file:
+FileFilter	FileFilter.cpp	/^FileFilter::FileFilter()$/;"	f	class:FileFilter	signature:()
+FileFilter	FileFilter.h	/^        FileFilter();$/;"	p	class:FileFilter	access:public	signature:()
+FileFilter	FileFilter.h	/^class FileFilter {$/;"	c
+FileFilter::FileFilter	FileFilter.cpp	/^FileFilter::FileFilter()$/;"	f	class:FileFilter	signature:()
+FileFilter::FileFilter	FileFilter.h	/^        FileFilter();$/;"	p	class:FileFilter	access:public	signature:()
+FileFilter::Filter	FileFilter.cpp	/^bool FileFilter::Filter(const string &path)$/;"	f	class:FileFilter	signature:(const string &path)
+FileFilter::Filter	FileFilter.h	/^        virtual bool Filter(const string &path);$/;"	p	class:FileFilter	access:public	signature:(const string &path)
+FileFilter::~FileFilter	FileFilter.cpp	/^FileFilter::~FileFilter()$/;"	f	class:FileFilter	signature:()
+FileFilter::~FileFilter	FileFilter.h	/^        virtual ~FileFilter();$/;"	p	class:FileFilter	access:public	signature:()
+Filter	DirFilter.cpp	/^bool DirFilter::Filter(const string &path)$/;"	f	class:DirFilter	signature:(const string &path)
+Filter	DirFilter.h	/^        bool Filter(const string &path);$/;"	p	class:DirFilter	access:private	signature:(const string &path)
+Filter	FileFilter.cpp	/^bool FileFilter::Filter(const string &path)$/;"	f	class:FileFilter	signature:(const string &path)
+Filter	FileFilter.h	/^        virtual bool Filter(const string &path);$/;"	p	class:FileFilter	access:public	signature:(const string &path)
+Filter	PostfixFilter.cpp	/^bool PostfixFilter::Filter(const string &path)$/;"	f	class:PostfixFilter	signature:(const string &path)
+Filter	PostfixFilter.h	/^        bool Filter(const string &path);$/;"	p	class:PostfixFilter	access:public	signature:(const string &path)
+Filter	PrefixFilter.cpp	/^bool PrefixFilter::Filter(const string &path)$/;"	f	class:PrefixFilter	signature:(const string &path)
+Filter	PrefixFilter.h	/^        bool Filter(const string &path);$/;"	p	class:PrefixFilter	access:private	signature:(const string &path)
+Filter	Scanner.cpp	/^void Scanner::Filter(const set<string>& fileSet, map<string, int64_t>& fileMap)$/;"	f	class:Scanner	signature:(const set<string>& fileSet, map<string, int64_t>& fileMap)
+Filter	Scanner.h	/^        void Filter(const set<string>& fileSet, map<string, int64_t>& fileMap);$/;"	p	class:Scanner	access:private	signature:(const set<string>& fileSet, map<string, int64_t>& fileMap)
+Filter	SizeFilter.cpp	/^bool SizeFilter::Filter(const string &path)$/;"	f	class:SizeFilter	signature:(const string &path)
+Filter	SizeFilter.h	/^        bool Filter(const string &path);$/;"	p	class:SizeFilter	access:public	signature:(const string &path)
+FilterFactory	FilterFactory.cpp	/^FilterFactory::FilterFactory()$/;"	f	class:FilterFactory	signature:()
+FilterFactory	FilterFactory.h	/^        FilterFactory();$/;"	p	class:FilterFactory	access:public	signature:()
+FilterFactory	FilterFactory.h	/^class FilterFactory {$/;"	c
+FilterFactory::CreateFilter	FilterFactory.cpp	/^BOOSTPTR<FileFilter> FilterFactory::CreateFilter(const struct _FilterArg &arg)$/;"	f	class:FilterFactory	signature:(const struct _FilterArg &arg)
+FilterFactory::CreateFilter	FilterFactory.h	/^        BOOSTPTR<FileFilter> CreateFilter(const struct _FilterArg &arg);$/;"	p	class:FilterFactory	access:public	signature:(const struct _FilterArg &arg)
+FilterFactory::FilterFactory	FilterFactory.cpp	/^FilterFactory::FilterFactory()$/;"	f	class:FilterFactory	signature:()
+FilterFactory::FilterFactory	FilterFactory.h	/^        FilterFactory();$/;"	p	class:FilterFactory	access:public	signature:()
+FilterFactory::~FilterFactory	FilterFactory.cpp	/^FilterFactory::~FilterFactory()$/;"	f	class:FilterFactory	signature:()
+FilterFactory::~FilterFactory	FilterFactory.h	/^        ~FilterFactory();$/;"	p	class:FilterFactory	access:public	signature:()
+GetAllArvFile	Scanner.cpp	/^int Scanner::GetAllArvFile()$/;"	f	class:Scanner	signature:()
+GetAllArvFile	Scanner.h	/^        int GetAllArvFile();$/;"	p	class:Scanner	access:public	signature:()
+GetArvTaskFileName	Scanner.cpp	/^string Scanner::GetArvTaskFileName()$/;"	f	class:Scanner	signature:()
+GetArvTaskFileName	Scanner.h	/^        string GetArvTaskFileName();$/;"	p	class:Scanner	access:private	signature:()
+GetCurDate	Scanner.cpp	/^string Scanner::GetCurDate()$/;"	f	class:Scanner	signature:()
+GetCurDate	Scanner.h	/^        string GetCurDate();$/;"	p	class:Scanner	access:private	signature:()
+GetDirArg	Scanner.cpp	/^void Scanner::GetDirArg(const string &tmp, const string &fix, struct _DirFilterArg &arg)$/;"	f	class:Scanner	signature:(const string &tmp, const string &fix, struct _DirFilterArg &arg)
+GetDirArg	Scanner.h	/^        void GetDirArg(const string &tmp, const string &fix, struct _DirFilterArg &arg);$/;"	p	class:Scanner	access:private	signature:(const string &tmp, const string &fix, struct _DirFilterArg &arg)
+GetFix	Scanner.cpp	/^void Scanner::GetFix(const string &fix, set<string> &fixSet)$/;"	f	class:Scanner	signature:(const string &fix, set<string> &fixSet)
+GetFix	Scanner.h	/^        void GetFix(const string &fix, set<string> &fixSet);$/;"	p	class:Scanner	access:private	signature:(const string &fix, set<string> &fixSet)
+GetFixArg	Scanner.cpp	/^void Scanner::GetFixArg(const string &tmp, const string &fix, struct _FixFilterArg &arg)$/;"	f	class:Scanner	signature:(const string &tmp, const string &fix, struct _FixFilterArg &arg)
+GetFixArg	Scanner.h	/^        void GetFixArg(const string &tmp, const string &fix, struct _FixFilterArg &arg);$/;"	p	class:Scanner	access:private	signature:(const string &tmp, const string &fix, struct _FixFilterArg &arg)
+InRange	SizeFilter.cpp	/^bool SizeFilter::InRange(size_t size)$/;"	f	class:SizeFilter	signature:(size_t size)
+InRange	SizeFilter.h	/^        inline bool InRange(size_t size);$/;"	p	class:SizeFilter	access:private	signature:(size_t size)
+Init	Scanner.cpp	/^int Scanner::Init()$/;"	f	class:Scanner	signature:()
+Init	Scanner.h	/^        int  Init();$/;"	p	class:Scanner	access:private	signature:()
+IsFileTimeOk	Scanner.cpp	/^bool Scanner::IsFileTimeOk(const string& path)$/;"	f	class:Scanner	signature:(const string& path)
+IsFileTimeOk	Scanner.h	/^        bool IsFileTimeOk(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+IsFileTypeOk	Scanner.h	/^        bool IsFileTypeOk(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+PostfixFilter	PostfixFilter.cpp	/^PostfixFilter::PostfixFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:PostfixFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PostfixFilter	PostfixFilter.h	/^        PostfixFilter(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg);$/;"	p	class:PostfixFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PostfixFilter	PostfixFilter.h	/^class PostfixFilter : public FileFilter {$/;"	c	inherits:FileFilter
+PostfixFilter::Filter	PostfixFilter.cpp	/^bool PostfixFilter::Filter(const string &path)$/;"	f	class:PostfixFilter	signature:(const string &path)
+PostfixFilter::Filter	PostfixFilter.h	/^        bool Filter(const string &path);$/;"	p	class:PostfixFilter	access:public	signature:(const string &path)
+PostfixFilter::PostfixFilter	PostfixFilter.cpp	/^PostfixFilter::PostfixFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:PostfixFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PostfixFilter::PostfixFilter	PostfixFilter.h	/^        PostfixFilter(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg);$/;"	p	class:PostfixFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PostfixFilter::m_FilterPtr	PostfixFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:PostfixFilter	access:private
+PostfixFilter::m_PostfixArg	PostfixFilter.h	/^        struct _FixFilterArg m_PostfixArg;$/;"	m	class:PostfixFilter	typeref:struct:PostfixFilter::_FixFilterArg	access:private
+PostfixFilter::~PostfixFilter	PostfixFilter.cpp	/^PostfixFilter::~PostfixFilter()$/;"	f	class:PostfixFilter	signature:()
+PostfixFilter::~PostfixFilter	PostfixFilter.h	/^        ~PostfixFilter();$/;"	p	class:PostfixFilter	access:public	signature:()
+PrefixFilter	PrefixFilter.cpp	/^PrefixFilter::PrefixFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:PrefixFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PrefixFilter	PrefixFilter.h	/^        PrefixFilter(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg);$/;"	p	class:PrefixFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PrefixFilter	PrefixFilter.h	/^class PrefixFilter : public FileFilter {$/;"	c	inherits:FileFilter
+PrefixFilter::Filter	PrefixFilter.cpp	/^bool PrefixFilter::Filter(const string &path)$/;"	f	class:PrefixFilter	signature:(const string &path)
+PrefixFilter::Filter	PrefixFilter.h	/^        bool Filter(const string &path);$/;"	p	class:PrefixFilter	access:private	signature:(const string &path)
+PrefixFilter::PrefixFilter	PrefixFilter.cpp	/^PrefixFilter::PrefixFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:PrefixFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PrefixFilter::PrefixFilter	PrefixFilter.h	/^        PrefixFilter(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg);$/;"	p	class:PrefixFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _FixFilterArg &arg)
+PrefixFilter::m_FilterPtr	PrefixFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:PrefixFilter	access:private
+PrefixFilter::m_PrefixArg	PrefixFilter.h	/^        struct _FixFilterArg m_PrefixArg;$/;"	m	class:PrefixFilter	typeref:struct:PrefixFilter::_FixFilterArg	access:private
+PrefixFilter::~PrefixFilter	PrefixFilter.cpp	/^PrefixFilter::~PrefixFilter()$/;"	f	class:PrefixFilter	signature:()
+PrefixFilter::~PrefixFilter	PrefixFilter.h	/^        ~PrefixFilter();$/;"	p	class:PrefixFilter	access:public	signature:()
+Scanner	Scanner.cpp	/^Scanner::Scanner(const string& configPath)$/;"	f	class:Scanner	signature:(const string& configPath)
+Scanner	Scanner.h	/^        Scanner(const string& configPath);$/;"	p	class:Scanner	access:public	signature:(const string& configPath)
+Scanner	Scanner.h	/^class Scanner {$/;"	c
+Scanner::DoGetArvFile	Scanner.cpp	/^int Scanner::DoGetArvFile(const string& path)$/;"	f	class:Scanner	signature:(const string& path)
+Scanner::DoGetArvFile	Scanner.h	/^        int  DoGetArvFile(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+Scanner::Filter	Scanner.cpp	/^void Scanner::Filter(const set<string>& fileSet, map<string, int64_t>& fileMap)$/;"	f	class:Scanner	signature:(const set<string>& fileSet, map<string, int64_t>& fileMap)
+Scanner::Filter	Scanner.h	/^        void Filter(const set<string>& fileSet, map<string, int64_t>& fileMap);$/;"	p	class:Scanner	access:private	signature:(const set<string>& fileSet, map<string, int64_t>& fileMap)
+Scanner::GetAllArvFile	Scanner.cpp	/^int Scanner::GetAllArvFile()$/;"	f	class:Scanner	signature:()
+Scanner::GetAllArvFile	Scanner.h	/^        int GetAllArvFile();$/;"	p	class:Scanner	access:public	signature:()
+Scanner::GetArvTaskFileName	Scanner.cpp	/^string Scanner::GetArvTaskFileName()$/;"	f	class:Scanner	signature:()
+Scanner::GetArvTaskFileName	Scanner.h	/^        string GetArvTaskFileName();$/;"	p	class:Scanner	access:private	signature:()
+Scanner::GetCurDate	Scanner.cpp	/^string Scanner::GetCurDate()$/;"	f	class:Scanner	signature:()
+Scanner::GetCurDate	Scanner.h	/^        string GetCurDate();$/;"	p	class:Scanner	access:private	signature:()
+Scanner::GetDirArg	Scanner.cpp	/^void Scanner::GetDirArg(const string &tmp, const string &fix, struct _DirFilterArg &arg)$/;"	f	class:Scanner	signature:(const string &tmp, const string &fix, struct _DirFilterArg &arg)
+Scanner::GetDirArg	Scanner.h	/^        void GetDirArg(const string &tmp, const string &fix, struct _DirFilterArg &arg);$/;"	p	class:Scanner	access:private	signature:(const string &tmp, const string &fix, struct _DirFilterArg &arg)
+Scanner::GetFix	Scanner.cpp	/^void Scanner::GetFix(const string &fix, set<string> &fixSet)$/;"	f	class:Scanner	signature:(const string &fix, set<string> &fixSet)
+Scanner::GetFix	Scanner.h	/^        void GetFix(const string &fix, set<string> &fixSet);$/;"	p	class:Scanner	access:private	signature:(const string &fix, set<string> &fixSet)
+Scanner::GetFixArg	Scanner.cpp	/^void Scanner::GetFixArg(const string &tmp, const string &fix, struct _FixFilterArg &arg)$/;"	f	class:Scanner	signature:(const string &tmp, const string &fix, struct _FixFilterArg &arg)
+Scanner::GetFixArg	Scanner.h	/^        void GetFixArg(const string &tmp, const string &fix, struct _FixFilterArg &arg);$/;"	p	class:Scanner	access:private	signature:(const string &tmp, const string &fix, struct _FixFilterArg &arg)
+Scanner::Init	Scanner.cpp	/^int Scanner::Init()$/;"	f	class:Scanner	signature:()
+Scanner::Init	Scanner.h	/^        int  Init();$/;"	p	class:Scanner	access:private	signature:()
+Scanner::IsFileTimeOk	Scanner.cpp	/^bool Scanner::IsFileTimeOk(const string& path)$/;"	f	class:Scanner	signature:(const string& path)
+Scanner::IsFileTimeOk	Scanner.h	/^        bool IsFileTimeOk(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+Scanner::IsFileTypeOk	Scanner.h	/^        bool IsFileTypeOk(const string& path);$/;"	p	class:Scanner	access:private	signature:(const string& path)
+Scanner::Scanner	Scanner.cpp	/^Scanner::Scanner(const string& configPath)$/;"	f	class:Scanner	signature:(const string& configPath)
+Scanner::Scanner	Scanner.h	/^        Scanner(const string& configPath);$/;"	p	class:Scanner	access:public	signature:(const string& configPath)
+Scanner::Show	Scanner.cpp	/^void Scanner::Show()$/;"	f	class:Scanner	signature:()
+Scanner::Show	Scanner.h	/^        void Show();$/;"	p	class:Scanner	access:private	signature:()
+Scanner::WriteArvTaskFile	Scanner.cpp	/^int Scanner::WriteArvTaskFile(const string& path, const map<string, int64_t>& fileMap)$/;"	f	class:Scanner	signature:(const string& path, const map<string, int64_t>& fileMap)
+Scanner::WriteArvTaskFile	Scanner.h	/^        int  WriteArvTaskFile(const string& path, const map<string, int64_t>& fileMap);$/;"	p	class:Scanner	access:private	signature:(const string& path, const map<string, int64_t>& fileMap)
+Scanner::m_ArvPairPathMap	Scanner.h	/^        map<string, string>           m_ArvPairPathMap;$/;"	m	class:Scanner	access:private
+Scanner::m_ArvTaskPath	Scanner.h	/^        string m_ArvTaskPath;$/;"	m	class:Scanner	access:private
+Scanner::m_ConfigPath	Scanner.h	/^        string m_ConfigPath;    \/\/ÂΩíÊ°£ÈÖçÁΩÆÊñá‰ª∂Ë∑ØÂæÑ$/;"	m	class:Scanner	access:private
+Scanner::m_CurDate	Scanner.h	/^        string m_CurDate;       \/\/ÂΩìÂâçÁöÑÊó•Êúü Âπ¥ÊúàÊó•$/;"	m	class:Scanner	access:private
+Scanner::m_FileCnt	Scanner.h	/^        int    m_FileCnt;$/;"	m	class:Scanner	access:private
+Scanner::m_Filter	Scanner.h	/^        BOOSTPTR<FileFilter> m_Filter;$/;"	m	class:Scanner	access:private
+Scanner::m_FilterArg	Scanner.h	/^        struct _FilterArg m_FilterArg;$/;"	m	class:Scanner	typeref:struct:Scanner::_FilterArg	access:private
+Scanner::m_FilterTypeMap	Scanner.h	/^        map<string, vector<string> >  m_FilterTypeMap;$/;"	m	class:Scanner	access:private
+Scanner::m_IntervalTime	Scanner.h	/^        int    m_IntervalTime;$/;"	m	class:Scanner	access:private
+Scanner::m_ModifyTime	Scanner.h	/^        int    m_ModifyTime;$/;"	m	class:Scanner	access:private
+Scanner::m_Mountpoint	Scanner.h	/^        string m_Mountpoint;    \/\/ÂàÜÂå∫ÊåÇËΩΩË∑ØÂæÑ$/;"	m	class:Scanner	access:private
+Scanner::~Scanner	Scanner.cpp	/^Scanner::~Scanner()$/;"	f	class:Scanner	signature:()
+Scanner::~Scanner	Scanner.h	/^        ~Scanner();$/;"	p	class:Scanner	access:public	signature:()
+Show	Scanner.cpp	/^void Scanner::Show()$/;"	f	class:Scanner	signature:()
+Show	Scanner.h	/^        void Show();$/;"	p	class:Scanner	access:private	signature:()
+SizeFilter	SizeFilter.cpp	/^SizeFilter::SizeFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:SizeFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg)
+SizeFilter	SizeFilter.h	/^        SizeFilter(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg);$/;"	p	class:SizeFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg)
+SizeFilter	SizeFilter.h	/^class SizeFilter : public FileFilter {$/;"	c	inherits:FileFilter
+SizeFilter::Filter	SizeFilter.cpp	/^bool SizeFilter::Filter(const string &path)$/;"	f	class:SizeFilter	signature:(const string &path)
+SizeFilter::Filter	SizeFilter.h	/^        bool Filter(const string &path);$/;"	p	class:SizeFilter	access:public	signature:(const string &path)
+SizeFilter::InRange	SizeFilter.cpp	/^bool SizeFilter::InRange(size_t size)$/;"	f	class:SizeFilter	signature:(size_t size)
+SizeFilter::InRange	SizeFilter.h	/^        inline bool InRange(size_t size);$/;"	p	class:SizeFilter	access:private	signature:(size_t size)
+SizeFilter::SizeFilter	SizeFilter.cpp	/^SizeFilter::SizeFilter(BOOSTPTR<FileFilter> &ptr, $/;"	f	class:SizeFilter	signature:(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg)
+SizeFilter::SizeFilter	SizeFilter.h	/^        SizeFilter(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg);$/;"	p	class:SizeFilter	access:public	signature:(BOOSTPTR<FileFilter> &ptr, const struct _SizeFilterArg &arg)
+SizeFilter::m_FilterPtr	SizeFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:SizeFilter	access:private
+SizeFilter::m_SizeArg	SizeFilter.h	/^        struct _SizeFilterArg m_SizeArg;$/;"	m	class:SizeFilter	typeref:struct:SizeFilter::_SizeFilterArg	access:private
+SizeFilter::~SizeFilter	SizeFilter.cpp	/^SizeFilter::~SizeFilter()$/;"	f	class:SizeFilter	signature:()
+SizeFilter::~SizeFilter	SizeFilter.h	/^        ~SizeFilter();$/;"	p	class:SizeFilter	access:public	signature:()
+WriteArvTaskFile	Scanner.cpp	/^int Scanner::WriteArvTaskFile(const string& path, const map<string, int64_t>& fileMap)$/;"	f	class:Scanner	signature:(const string& path, const map<string, int64_t>& fileMap)
+WriteArvTaskFile	Scanner.h	/^        int  WriteArvTaskFile(const string& path, const map<string, int64_t>& fileMap);$/;"	p	class:Scanner	access:private	signature:(const string& path, const map<string, int64_t>& fileMap)
+_DEMAND	FilterType.h	/^enum _FilterType { _NOFILTER, _FILTER, _DEMAND };$/;"	e	enum:_FilterType
+_DIR_FILTER_H_	DirFilter.h	11;"	d
+_DirArg	FilterType.h	/^        struct _DirFilterArg _DirArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_DirFilterArg	access:public
+_DirFilterArg	FilterType.h	/^struct _DirFilterArg {$/;"	s
+_DirFilterArg::_DirSet	FilterType.h	/^        set<string> _DirSet;            \/* “™÷∏∂®°¢π˝¬ÀµƒŒƒº˛ƒø¬ººØ∫œ *\/$/;"	m	struct:_DirFilterArg	access:public
+_DirFilterArg::_Type	FilterType.h	/^        enum _FilterType _Type;         \/* »Áπ˚÷∏∂®¡À£¨÷∏œÚ±ÿ–Î « 0 *\/$/;"	m	struct:_DirFilterArg	typeref:enum:_DirFilterArg::_FilterType	access:public
+_DirSet	FilterType.h	/^        set<string> _DirSet;            \/* “™÷∏∂®°¢π˝¬ÀµƒŒƒº˛ƒø¬ººØ∫œ *\/$/;"	m	struct:_DirFilterArg	access:public
+_FILE_FILTER_H_	FileFilter.h	11;"	d
+_FILTER	FilterType.h	/^enum _FilterType { _NOFILTER, _FILTER, _DEMAND };$/;"	e	enum:_FilterType
+_FILTER_FACTORY_H_	FilterFactory.h	11;"	d
+_FILTER_TYPE_H_	FilterType.h	12;"	d
+_FilterArg	FilterType.h	/^struct _FilterArg {$/;"	s
+_FilterArg::_DirArg	FilterType.h	/^        struct _DirFilterArg _DirArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_DirFilterArg	access:public
+_FilterArg::_PostfixArg	FilterType.h	/^        struct _FixFilterArg _PostfixArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_FixFilterArg	access:public
+_FilterArg::_PrefixArg	FilterType.h	/^        struct _FixFilterArg _PrefixArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_FixFilterArg	access:public
+_FilterArg::_SizeArg	FilterType.h	/^        struct _SizeFilterArg _SizeArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_SizeFilterArg	access:public
+_FilterType	FilterType.h	/^enum _FilterType { _NOFILTER, _FILTER, _DEMAND };$/;"	g
+_FixFilterArg	FilterType.h	/^struct _FixFilterArg {$/;"	s
+_FixFilterArg::_FixSet	FilterType.h	/^        set<string> _FixSet;            \/* “™÷∏∂®°¢π˝¬ÀµƒŒƒº˛¿‡–ÕºØ∫œ *\/$/;"	m	struct:_FixFilterArg	access:public
+_FixFilterArg::_Type	FilterType.h	/^        enum _FilterType _Type;         \/* »Áπ˚÷∏∂®¡À£¨÷∏œÚ±ÿ–Î « 0 *\/$/;"	m	struct:_FixFilterArg	typeref:enum:_FixFilterArg::_FilterType	access:public
+_FixSet	FilterType.h	/^        set<string> _FixSet;            \/* “™÷∏∂®°¢π˝¬ÀµƒŒƒº˛¿‡–ÕºØ∫œ *\/$/;"	m	struct:_FixFilterArg	access:public
+_Max	FilterType.h	/^        size_t _Max;                    \/* ÷∏∂®°¢π˝¬ÀŒƒº˛¥Û–°µƒ◊Ó¥Û÷µ *\/$/;"	m	struct:_SizeFilterArg	access:public
+_Min	FilterType.h	/^        size_t _Min;                    \/* ÷∏∂®°¢π˝¬ÀŒƒº˛¥Û–°µƒ◊Ó–°÷µ *\/$/;"	m	struct:_SizeFilterArg	access:public
+_NOFILTER	FilterType.h	/^enum _FilterType { _NOFILTER, _FILTER, _DEMAND };$/;"	e	enum:_FilterType
+_POSTFIX_FILTER_H_	PostfixFilter.h	11;"	d
+_PREFIX_FILTER_H_	PrefixFilter.h	11;"	d
+_PostfixArg	FilterType.h	/^        struct _FixFilterArg _PostfixArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_FixFilterArg	access:public
+_PrefixArg	FilterType.h	/^        struct _FixFilterArg _PrefixArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_FixFilterArg	access:public
+_SCANNER_H_	Scanner.h	2;"	d
+_SIZE_FILTER_H_	SizeFilter.h	11;"	d
+_SizeArg	FilterType.h	/^        struct _SizeFilterArg _SizeArg;$/;"	m	struct:_FilterArg	typeref:struct:_FilterArg::_SizeFilterArg	access:public
+_SizeFilterArg	FilterType.h	/^struct _SizeFilterArg {$/;"	s
+_SizeFilterArg::_Max	FilterType.h	/^        size_t _Max;                    \/* ÷∏∂®°¢π˝¬ÀŒƒº˛¥Û–°µƒ◊Ó¥Û÷µ *\/$/;"	m	struct:_SizeFilterArg	access:public
+_SizeFilterArg::_Min	FilterType.h	/^        size_t _Min;                    \/* ÷∏∂®°¢π˝¬ÀŒƒº˛¥Û–°µƒ◊Ó–°÷µ *\/$/;"	m	struct:_SizeFilterArg	access:public
+_SizeFilterArg::_Type	FilterType.h	/^        enum _FilterType _Type;         \/* -1£∫Œﬁ£¨0: π˝¬À£¨1£∫÷∏∂® *\/$/;"	m	struct:_SizeFilterArg	typeref:enum:_SizeFilterArg::_FilterType	access:public
+_Type	FilterType.h	/^        enum _FilterType _Type;         \/* -1£∫Œﬁ£¨0: π˝¬À£¨1£∫÷∏∂® *\/$/;"	m	struct:_SizeFilterArg	typeref:enum:_SizeFilterArg::_FilterType	access:public
+_Type	FilterType.h	/^        enum _FilterType _Type;         \/* »Áπ˚÷∏∂®¡À£¨÷∏œÚ±ÿ–Î « 0 *\/$/;"	m	struct:_DirFilterArg	typeref:enum:_DirFilterArg::_FilterType	access:public
+_Type	FilterType.h	/^        enum _FilterType _Type;         \/* »Áπ˚÷∏∂®¡À£¨÷∏œÚ±ÿ–Î « 0 *\/$/;"	m	struct:_FixFilterArg	typeref:enum:_FixFilterArg::_FilterType	access:public
+m_ArvPairPathMap	Scanner.h	/^        map<string, string>           m_ArvPairPathMap;$/;"	m	class:Scanner	access:private
+m_ArvTaskPath	Scanner.h	/^        string m_ArvTaskPath;$/;"	m	class:Scanner	access:private
+m_ConfigPath	Scanner.h	/^        string m_ConfigPath;    \/\/ÂΩíÊ°£ÈÖçÁΩÆÊñá‰ª∂Ë∑ØÂæÑ$/;"	m	class:Scanner	access:private
+m_CurDate	Scanner.h	/^        string m_CurDate;       \/\/ÂΩìÂâçÁöÑÊó•Êúü Âπ¥ÊúàÊó•$/;"	m	class:Scanner	access:private
+m_DirArg	DirFilter.h	/^        struct _DirFilterArg m_DirArg;$/;"	m	class:DirFilter	typeref:struct:DirFilter::_DirFilterArg	access:private
+m_FileCnt	Scanner.h	/^        int    m_FileCnt;$/;"	m	class:Scanner	access:private
+m_Filter	Scanner.h	/^        BOOSTPTR<FileFilter> m_Filter;$/;"	m	class:Scanner	access:private
+m_FilterArg	Scanner.h	/^        struct _FilterArg m_FilterArg;$/;"	m	class:Scanner	typeref:struct:Scanner::_FilterArg	access:private
+m_FilterPtr	DirFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:DirFilter	access:private
+m_FilterPtr	PostfixFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:PostfixFilter	access:private
+m_FilterPtr	PrefixFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:PrefixFilter	access:private
+m_FilterPtr	SizeFilter.h	/^        BOOSTPTR<FileFilter> m_FilterPtr;$/;"	m	class:SizeFilter	access:private
+m_FilterTypeMap	Scanner.h	/^        map<string, vector<string> >  m_FilterTypeMap;$/;"	m	class:Scanner	access:private
+m_IntervalTime	Scanner.h	/^        int    m_IntervalTime;$/;"	m	class:Scanner	access:private
+m_ModifyTime	Scanner.h	/^        int    m_ModifyTime;$/;"	m	class:Scanner	access:private
+m_Mountpoint	Scanner.h	/^        string m_Mountpoint;    \/\/ÂàÜÂå∫ÊåÇËΩΩË∑ØÂæÑ$/;"	m	class:Scanner	access:private
+m_PostfixArg	PostfixFilter.h	/^        struct _FixFilterArg m_PostfixArg;$/;"	m	class:PostfixFilter	typeref:struct:PostfixFilter::_FixFilterArg	access:private
+m_PrefixArg	PrefixFilter.h	/^        struct _FixFilterArg m_PrefixArg;$/;"	m	class:PrefixFilter	typeref:struct:PrefixFilter::_FixFilterArg	access:private
+m_SizeArg	SizeFilter.h	/^        struct _SizeFilterArg m_SizeArg;$/;"	m	class:SizeFilter	typeref:struct:SizeFilter::_SizeFilterArg	access:private
+~DirFilter	DirFilter.cpp	/^DirFilter::~DirFilter()$/;"	f	class:DirFilter	signature:()
+~DirFilter	DirFilter.h	/^        ~DirFilter();$/;"	p	class:DirFilter	access:public	signature:()
+~FileFilter	FileFilter.cpp	/^FileFilter::~FileFilter()$/;"	f	class:FileFilter	signature:()
+~FileFilter	FileFilter.h	/^        virtual ~FileFilter();$/;"	p	class:FileFilter	access:public	signature:()
+~FilterFactory	FilterFactory.cpp	/^FilterFactory::~FilterFactory()$/;"	f	class:FilterFactory	signature:()
+~FilterFactory	FilterFactory.h	/^        ~FilterFactory();$/;"	p	class:FilterFactory	access:public	signature:()
+~PostfixFilter	PostfixFilter.cpp	/^PostfixFilter::~PostfixFilter()$/;"	f	class:PostfixFilter	signature:()
+~PostfixFilter	PostfixFilter.h	/^        ~PostfixFilter();$/;"	p	class:PostfixFilter	access:public	signature:()
+~PrefixFilter	PrefixFilter.cpp	/^PrefixFilter::~PrefixFilter()$/;"	f	class:PrefixFilter	signature:()
+~PrefixFilter	PrefixFilter.h	/^        ~PrefixFilter();$/;"	p	class:PrefixFilter	access:public	signature:()
+~Scanner	Scanner.cpp	/^Scanner::~Scanner()$/;"	f	class:Scanner	signature:()
+~Scanner	Scanner.h	/^        ~Scanner();$/;"	p	class:Scanner	access:public	signature:()
+~SizeFilter	SizeFilter.cpp	/^SizeFilter::~SizeFilter()$/;"	f	class:SizeFilter	signature:()
+~SizeFilter	SizeFilter.h	/^        ~SizeFilter();$/;"	p	class:SizeFilter	access:public	signature:()

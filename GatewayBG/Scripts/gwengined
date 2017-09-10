@@ -1,0 +1,66 @@
+#!/bin/bash
+# chkconfig: - 85 15
+# description: The Apache HTTP Server is an efficient and extensible  \
+#	       server implementing the current HTTP standards.
+# processname: gwengine 
+# config: 
+# pidfile: /etc/ddfs/GWEngine.pid
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+#---------
+#HTTPD_LANG=${HTTPD_LANG-"CC"}
+OPTIONS=40000
+
+#---------------
+GWEngine=${GWEngine-/usr/sbin/GWEngine}
+prog=gwengine
+pidfile=${PIDFILE-/var/run/GWEngine.pid}
+lockfile=${LOCKFILE-/var/run/GWEngine}
+RETVAL=0
+
+#---------------- 
+start() {
+        echo -n $"Starting $prog: "
+        #LANG=$HTTPD_LANG daemon --pidfile=${pidfile} $GWEngine $OPTIONS
+        ulimit -n 1024
+        source /root/.bash_profile
+        daemon --pidfile=${pidfile} $GWEngine $OPTIONS
+        RETVAL=$?
+        echo
+        [ $RETVAL = 0 ] && touch ${lockfile}
+        return $RETVAL
+}
+
+#--------------------
+stop() {
+	echo -n $"Stopping $prog: "
+	killproc -p ${pidfile} -d 10 $GWEngine
+	RETVAL=$?
+	echo
+	[ $RETVAL = 0 ] && rm -f ${lockfile} ${pidfile}
+}
+
+# See how we were called.
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  status)
+        status -p ${pidfile} $GWEngine
+	RETVAL=$?
+	;;
+  restart)
+	stop
+	start
+	;;
+  *)
+	echo $"Usage: $prog {start|stop|restart|status}"
+	RETVAL=3
+esac
+
+exit $RETVAL
